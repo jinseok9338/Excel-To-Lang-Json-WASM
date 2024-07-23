@@ -3,8 +3,6 @@ compile and run
 install rust
 [install rust](https://www.rust-lang.org/tools/install)
 
-target web assembly
-
 install wasm-pack
 [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
 
