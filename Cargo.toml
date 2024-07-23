@@ -1,0 +1,20 @@
+[package]
+name = "rust-project"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib","rlib"]
+
+[dependencies]
+calamine = "0.25.0"
+dashmap = "6.0.1"
+serde = { version = "1.0.183", features = ["derive"] }
+serde_json = "1.0.120"
+wasm-bindgen = "0.2.92"
+web-sys =  { version ="0.3.69", features = ["console"] }
+console_error_panic_hook = "0.1"
+
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ["-Os", "--fast-math"]
