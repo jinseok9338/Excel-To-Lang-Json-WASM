@@ -6,6 +6,9 @@ edition = "2021"
 [lib]
 crate-type = ["cdylib","rlib"]
 
+[build]
+target = ["wasm32-unknown-unknown"]
+
 [dependencies]
 calamine = "0.25.0"
 dashmap = "6.0.1"

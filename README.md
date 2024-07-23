@@ -1,5 +1,17 @@
 compile and run
 
+install rust
+[install rust](https://www.rust-lang.org/tools/install)
+
+target web assembly
+
+install wasm-pack
+[wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
+
+```bash
+curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+```
+
 compile to wasm
 
 ```bash
