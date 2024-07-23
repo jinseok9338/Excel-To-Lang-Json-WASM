@@ -1,0 +1,11 @@
+{
+  "name": "rust-project",
+  "version": "0.1.0",
+  "files": [
+    "rust_project_bg.wasm",
+    "rust_project.js",
+    "rust_project.d.ts"
+  ],
+  "main": "rust_project.js",
+  "types": "rust_project.d.ts"
+}
