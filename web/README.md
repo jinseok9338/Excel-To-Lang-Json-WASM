@@ -1,4 +1,25 @@
-import { parse_excel } from "./node/rust_project.js";
+compile and run
+
+install rust
+[install rust](https://www.rust-lang.org/tools/install)
+
+install wasm-pack
+[wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
+
+```bash
+curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+```
+
+compile to wasm
+
+```bash
+wasm-pack build --target nodejs
+```
+
+run in node -> refer to test.js
+
+```js
+import { parse_excel } from "./pkg/rust_project.js";
 import fs from "fs";
 
 async function main() {
@@ -21,3 +42,4 @@ async function main() {
 }
 
 main();
+```

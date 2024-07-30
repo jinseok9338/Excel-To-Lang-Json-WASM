@@ -1,7 +1,7 @@
-import { parse_excel } from "./node/rust_project.js";
+import { parse_excel } from "./pkg/rust_project.js";
 import fs from "fs";
 
-async function main() {
+export async function generateExcel() {
   try {
     console.time("parse_excel");
     const fileContent = fs.readFileSync("test-lang.xlsx");
@@ -19,5 +19,3 @@ async function main() {
     console.error("Error parsing Excel:", error);
   }
 }
-
-main();
